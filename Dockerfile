@@ -14,6 +14,8 @@ RUN poetry install  --no-interaction --no-ansi --no-root
 
 COPY ./app ./app
 
+COPY ./openai.txt ./openai.txt
+
 RUN poetry install --no-interaction --no-ansi
 
 EXPOSE 8080
